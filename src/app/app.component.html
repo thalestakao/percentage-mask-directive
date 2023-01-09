@@ -1,0 +1,12 @@
+<div>
+  <form [formGroup]="formPorcentagem">
+    <input type="text" appPercentageMask formControlName="porcentagem" (pasted)="imprimePasted($event)" />
+  </form>
+  
+  <button (click)="imprime()">Click me</button>
+  
+</div>
+
+<div style="padding-top: 50px">
+  <input type="text" appPercentageMask [(ngModel)]="porcentagemNgModel" />
+</div>
